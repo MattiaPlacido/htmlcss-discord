@@ -168,29 +168,41 @@ a {
   color: white;
   font-size: 0.9rem;
   margin: 7px 0;
-  font-weight: 550;
+  font-weight: 500;
+}
+
+.link-container {
+  flex: 3;
+  justify-content: space-between;
+  display: flex;
 }
 
 .footer-section > .container {
-  padding: 70px 0;
+  padding: 50px 0;
 }
 
-.footer-section > .container > .light-red {
+.footer-section > .container > .container {
   flex: 1.5;
-  padding: 300px 0;
-}
-
-.footer-section > .container > .container > .item-group {
   flex-direction: column;
 }
-.footer-section > .container > .container {
-  flex: 3;
-  justify-content: space-between;
+
+.footer-section > .container > .container > .image-container {
+  /* Ho scaricato immagini nere dimenticandomi lo sfondo fosse nero, questo è un modo rapido per rimediare senza riscaricare le immagini */
+  filter: invert(97%);
+  margin-top: 5px;
+}
+
+.footer-section > .container > .container > h1 {
+  color: #758cdb;
+}
+
+.footer-section > .container > .link-container > .item-group {
+  flex-direction: column;
 }
 
 .footer-section
   > .container
-  > .container
+  > .link-container
   > .item-group
   > .item-footer:first-child {
   color: #758cdb;
@@ -199,15 +211,9 @@ a {
 .footer-section > hr {
   width: 1000px;
   height: 1px;
-  margin: 10px;
   background-color: white;
   margin: 20px auto;
 }
-/* 
-.footer-section > .container {
-  padding: 10px 0;
-  justify-content: space-between;
-} */
 /* SPAM */
 
 .blue {
