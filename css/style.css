@@ -45,7 +45,20 @@ a {
   display: flex;
 }
 
-.icon {
+.badge {
+  border-radius: 20px;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+.blacktxt-whitebg {
+  color: black;
+  background-color: white;
+}
+
+.whitetxt-blackbg {
+  color: white;
+  background-color: black;
 }
 
 /* Header */
@@ -70,19 +83,27 @@ a {
 .bottom-header {
   background-image: url("../img/jumbo.png");
   display: flex;
-  background-size: contain;
+  justify-content: center;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
+  height: 70vh; /* Dimensione nativa dell'imagine*/
+  flex-direction: column;
 }
 
-.bottom-header > .container {
+.bottom-header > .container:first-child {
   flex-direction: column;
   justify-content: center;
   color: white;
   line-height: 1.8;
-  font-size: 15;
   text-align: center;
-  padding: 30px 0;
+}
+
+.bottom-header > .container:last-child {
+  justify-content: center;
+}
+
+.bottom-header > .container > .badge {
+  margin: 15px;
 }
 
 .bottom-header > .container > h1 {
