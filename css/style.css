@@ -116,17 +116,24 @@ a {
 
 .main-section > .container > .text-container {
   flex: 1;
+  align-content: center;
 }
+
+.main-section > .container > .text-container > h1 {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+.main-section > .container > .text-container > p {
+  line-height: 1.5;
+  margin: 10px 0;
+}
+
 .main-section > .container > .item-main {
   flex: 2;
 }
 
 .main-section > .container > .green {
   padding: 350px 0;
-}
-
-.main-section > .container {
-  justify-content: center;
 }
 
 /* Footer section */
