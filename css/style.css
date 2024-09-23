@@ -164,41 +164,50 @@ a {
   background-color: rgb(29, 29, 29);
 }
 
-.footer-section > .container > .item-group {
-  flex: 3;
+.item-footer {
+  color: white;
+  font-size: 0.9rem;
+  margin: 7px 0;
+  font-weight: 550;
 }
 
-.item-footer {
-  font-weight: bold;
-  border: 2px dashed black;
+.footer-section > .container {
+  padding: 70px 0;
 }
 
 .footer-section > .container > .light-red {
   flex: 1.5;
   padding: 300px 0;
 }
-.footer-section > .container > .item-group > .item-footer {
-  text-align: center;
-  padding: 300px 0;
+
+.footer-section > .container > .container > .item-group {
+  flex-direction: column;
+}
+.footer-section > .container > .container {
+  flex: 3;
+  justify-content: space-between;
 }
 
-.item-group > .item-footer {
-  border: 2px dashed white;
-  width: 100%;
+.footer-section
+  > .container
+  > .container
+  > .item-group
+  > .item-footer:first-child {
+  color: #758cdb;
 }
 
 .footer-section > hr {
-  width: 900px;
+  width: 1000px;
   height: 1px;
   margin: 10px;
   background-color: white;
   margin: 20px auto;
 }
-
+/* 
 .footer-section > .container {
   padding: 10px 0;
   justify-content: space-between;
-}
+} */
 /* SPAM */
 
 .blue {
