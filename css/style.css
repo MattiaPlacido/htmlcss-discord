@@ -3,7 +3,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
 }
 
 a {
@@ -136,6 +137,14 @@ a {
   font-size: 1.2rem;
 }
 
+.main-section:last-child > .container > .text-container > p {
+  text-align: center;
+}
+
+.main-section:last-child > .container > .text-container > h1 {
+  text-align: center;
+}
+
 .main-section > .container > .image-container {
   flex: 2;
 }
@@ -184,6 +193,11 @@ a {
 .footer-section > .container > .container {
   flex: 1.5;
   flex-direction: column;
+}
+
+.footer-section > .container > .container > .image-container {
+  justify-content: space-between;
+  width: 80px;
 }
 
 .footer-section > .container > .container > h1 {
