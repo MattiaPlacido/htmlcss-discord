@@ -1,0 +1,152 @@
+/* Reset */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+
+/* Utils */
+.container {
+  margin: 0 auto;
+  display: flex;
+  width: 900px;
+}
+
+.blue {
+  background-color: skyblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.light-red {
+  background-color: lightcoral;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.brown {
+  background-color: brown;
+}
+
+/* Header */
+.top-header {
+  background-color: aqua;
+  padding: 10px 0;
+}
+
+.item-header {
+  font-weight: bold;
+  border: 2px dashed black;
+  width: 100%;
+  padding: 10px;
+}
+
+.top-header > .container {
+  background-color: orange;
+  justify-content: space-between;
+}
+
+.container > .item-header:nth-child(2) {
+  text-align: center;
+}
+.container > .item-header:last-child {
+  text-align: right;
+}
+
+.bottom-header {
+  background-image: url("./img/jumbo.png");
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.banner-header {
+  background-color: purple;
+  width: 600px;
+  padding: 200px 0;
+  border: 2px dashed black;
+}
+/* Main */
+
+.main-section {
+  padding: 30px 0;
+}
+
+.main-section:nth-child(2n) {
+  background-color: gray;
+}
+
+.item-main {
+  font-weight: bold;
+  border: 2px dashed black;
+  width: 100%;
+  padding: 250px 0;
+}
+
+.main-section > .container > .pink {
+  flex: 1;
+}
+.main-section > .container > .blue {
+  flex: 2;
+}
+
+.main-section > .container > .green {
+  padding: 350px 0;
+}
+
+.main-section > .container {
+  justify-content: center;
+}
+
+/* Footer section */
+.footer-section {
+  background-color: rgb(29, 29, 29);
+}
+
+.item-group {
+  flex: 3;
+  display: flex;
+}
+
+.item-footer {
+  font-weight: bold;
+  border: 2px dashed black;
+}
+
+.footer-section > .container > .light-red {
+  flex: 1.5;
+  padding: 300px 0;
+}
+.footer-section > .container > .item-group > .item-footer {
+  text-align: center;
+  padding: 300px 0;
+}
+
+.item-group > .item-footer {
+  border: 2px dashed white;
+  width: 100%;
+}
+
+.footer-section > hr {
+  width: 900px;
+  height: 1px;
+  margin: 10px;
+  background-color: white;
+  margin: 20px auto;
+}
+
+.footer-section > .container {
+  padding: 10px 0;
+  justify-content: space-between;
+}
