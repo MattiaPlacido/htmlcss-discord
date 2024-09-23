@@ -4,8 +4,8 @@
   padding: 0;
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
 }
+
 a {
   text-decoration: none;
 }
@@ -17,28 +17,9 @@ a {
   width: 900px;
 }
 
-.blue {
-  background-color: skyblue;
-}
-
-.pink {
-  background-color: pink;
-}
-
-.green {
-  background-color: green;
-}
-
-.light-red {
-  background-color: lightcoral;
-}
-
-.cyan {
-  background-color: cyan;
-}
-
-.brown {
-  background-color: brown;
+.text-container {
+  margin: 0 auto;
+  flex-direction: column;
 }
 
 .item-group {
@@ -49,16 +30,6 @@ a {
   border-radius: 20px;
   padding: 10px 20px;
   width: fit-content;
-}
-
-.blacktxt-whitebg {
-  color: black;
-  background-color: white;
-}
-
-.whitetxt-blackbg {
-  color: white;
-  background-color: black;
 }
 
 /* Header */
@@ -90,15 +61,13 @@ a {
   flex-direction: column;
 }
 
-.bottom-header > .container:first-child {
-  flex-direction: column;
-  justify-content: center;
+.bottom-header > .text-container {
   color: white;
   line-height: 1.8;
   text-align: center;
 }
 
-.bottom-header > .container:last-child {
+.bottom-header > .container {
   justify-content: center;
 }
 
@@ -106,8 +75,12 @@ a {
   margin: 15px;
 }
 
-.bottom-header > .container > h1 {
+.bottom-header > .text-container > h1 {
   font-size: 3rem;
+}
+
+.bottom-header > .text-container > p {
+  font-size: large;
 }
 
 /* Main */
@@ -134,10 +107,17 @@ a {
   padding: 250px 0;
 }
 
-.main-section > .container > .pink {
+.main-section > .text-container {
+  flex-direction: column;
+  color: white;
+  line-height: 1.8;
+  text-align: center;
+}
+
+.main-section > .container > .text-container {
   flex: 1;
 }
-.main-section > .container > .blue {
+.main-section > .container > .item-main {
   flex: 2;
 }
 
@@ -188,4 +168,38 @@ a {
 .footer-section > .container {
   padding: 10px 0;
   justify-content: space-between;
+}
+/* SPAM */
+
+.blue {
+  background-color: skyblue;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.green {
+  background-color: green;
+}
+
+.light-red {
+  background-color: lightcoral;
+}
+
+.cyan {
+  background-color: cyan;
+}
+
+.brown {
+  background-color: brown;
+}
+.blacktxt-whitebg {
+  color: black;
+  background-color: white;
+}
+
+.whitetxt-blackbg {
+  color: white;
+  background-color: black;
 }
