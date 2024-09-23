@@ -146,6 +146,19 @@ a {
 .main-section > .container > .image-container {
   flex: 2;
 }
+
+.main-section > .container > .container {
+  background-image: url("../img/stars.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: fit-content;
+  padding: 30px;
+}
+
+.main-section:last-child {
+  margin-bottom: 100px;
+}
+
 /* Footer section */
 .footer-section {
   background-color: rgb(29, 29, 29);
@@ -219,4 +232,9 @@ a {
 .whitetxt-blackbg {
   color: white;
   background-color: black;
+}
+
+.whitetxt-bluebg {
+  background-color: #758cdb;
+  color: white;
 }
