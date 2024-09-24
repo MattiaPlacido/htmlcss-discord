@@ -99,22 +99,27 @@ a {
   padding: 30px 0;
 }
 
-.wave {
+.wavegrey {
   width: 100%;
-  height: 160px;
-  background-image: url("../img/wave.svg");
+  height: 120px;
   background-size: contain;
-}
-
-.main-section:nth-child(odd) {
-  background-color: #f6f6f6;
-}
-
-.main-section:nth-child(odd) > .wave {
+  background-image: url("../img/wavegrey.svg");
   background-color: white;
 }
 
-.main-section:nth-child(even) > .wave {
+.wavewhite {
+  width: 100%;
+  height: 120px;
+  background-size: contain;
+  background-image: url("../img/wave.svg");
+  background-color: #f6f6f6;
+}
+
+.main-section:nth-child(odd) {
+  background-color: white;
+}
+
+.main-section:nth-child(even) {
   background-color: #f6f6f6;
 }
 
@@ -158,7 +163,7 @@ a {
 }
 
 .main-section:last-child {
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 /* Footer section */
